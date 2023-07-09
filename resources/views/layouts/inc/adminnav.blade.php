@@ -16,6 +16,15 @@
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::path() === 'view-resort' ? 'active' : '' }}" href="{{ route('resorts.index') }}">Resort List</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ? 'active' : '' }}" href="{{ route('resorts.promotions') }}">Promotions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ? 'active' : '' }}" href="{{ route('resorts.contact') }}">Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ? 'active' : '' }}" href="{{ route('resorts.index') }}">Resort List</a>
+                            </li> -->
           </ol>
           {{-- <h6 class="font-weight-bolder mb-0">Dashboard</h6> --}}
         </nav>
