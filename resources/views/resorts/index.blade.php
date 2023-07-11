@@ -37,14 +37,14 @@
                     <table class="table table-responsive">
                         <thead>
                             <tr>
-                                <th scope="col">SI.</th>
-                                <th scope="col">R.Name</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Image</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Action</th>
+                                <th>SI.</th>
+                                <th>R.Name</th>
+                                <th>Description</th>
+                                <th>Location</th>
+                                <th>Price</th>
+                                <th>Image</th>
+                                <th>Status</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
 

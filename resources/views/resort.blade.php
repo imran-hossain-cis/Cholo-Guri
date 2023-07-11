@@ -4,7 +4,7 @@
 @include('layouts.inc.slider')
  <div class="container">
 
-    <div class="row p-3 mb-2 bg-secondary text-white">
+    <div class="row p-3 mb-2 bg-light text-dark">
         <h4 class="text-center p-4">Book Resort Now !</h4>
 
 

@@ -31,7 +31,7 @@ class ResortController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'location' => ['required', 'string', 'max:255'],
             'price' => ['required', 'numeric', 'gt:0'],
-            'description' => ['required', 'max:255'],
+            'description' => ['required'],
             'image' => ['required', 'image', 'max:2048'],
         ]);
 
@@ -59,7 +59,7 @@ class ResortController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'location' => ['required', 'string', 'max:255'],
             'price' => ['required', 'numeric', 'gt:0'],
-            'description' => ['required', 'max:255'],
+            'description' => ['required'],
             'image' => ['required', 'image', 'max:2048'],
         ]);
 

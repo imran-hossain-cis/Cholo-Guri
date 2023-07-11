@@ -41,7 +41,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light text-light" style="background-color: #2e2d2c;">
+        <nav class="navbar navbar-expand-md navbar-light text-light" style="background-color: #4d4945;">
             <div class="container">
                 <a class="navbar-brand text-light font-weight-bold" href="{{ url('/') }}">
                     Cholo Ghuri
@@ -63,58 +63,62 @@
                         <!-- Authentication Links -->
                         @if (Auth::user())
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === '/' ?
-                                'active' : '' }}" href="{{ route('homepage') }}">HomePage</a>
+                                <a class="nav-link text-light {{ Request::path() === '/' ? 'active' : '' }}"
+                                    href="{{ route('homepage') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'home' ?
-                                 'active' : '' }}" href="{{ route('home') }}">Dashboard</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="{{ route('resorts.cards') }}">Resort</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-user' ?
-                                'active' : '' }}" aria-current="page" href="{{ route('users.index')}}">User</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="#">Package</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="{{ route('resorts.index') }}">Resort List</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="#">Swimming</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'bookings' ?
-                                'active' : '' }}" href="{{ route('bookings.index') }}">Booking</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="#">Travel Advisory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="{{ route('resorts.promotions') }}">Promotions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="{{ route('resorts.contact') }}">Contact Us</a>
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === '/' ?
-                                'active' : '' }}" href="{{ route('homepage') }}">Home</a>
+                                <a class="nav-link text-light {{ Request::path() === '/' ? 'active' : '' }}"
+                                    href="{{ route('homepage') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="{{ route('resorts.cards') }}">Resort</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="{{ route('resorts.cards') }}">Resort</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="#">Package</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="#">Package</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="#">Swimming</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="#">Swimming</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="#">Travel Advisory</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="#">Travel Advisory</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="{{ route('resorts.promotions') }}">Promotions</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="{{ route('resorts.promotions') }}">Promotions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="{{ route('resorts.contact') }}">Contact Us</a>
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ? 'active' : '' }}"
+                                    href="{{ route('resorts.contact') }}">Contact Us</a>
                             </li>
-
                         @endif
 
 
@@ -135,6 +139,11 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li> --}}
+                                    <li>
+                                        <a class="dropdown-item" href="{{ url('home') }}">
+                                            Dashboard
+                                        </a>
+                                    </li>
                                     <li>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
